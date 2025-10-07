@@ -1,0 +1,27 @@
+{
+  "name": "playwright_project1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke --project=e2e-chromium",
+    "test:serial": "npx playwright test --workers=1 --project=api-chromium",
+    "test:e2e": "npx playwright test tests/e2e/validateParabankFunctions.spec.ts",
+    "test:api": "npx playwright test tests/api/apiTestCases.spec.ts",
+    "test:record": "npx playwright codegen",
+    "html-report": "npx playwright test --reporter=html && npx playwright show-report",
+    "show-trace": "npx playwright show-trace"
+  },
+  "keywords": [],
+  "author": "Haripriya Sakthivel",
+  "license": "ISC",
+  "description": "Automation test using Playwright TS",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "3.6.2"
+  }
+}

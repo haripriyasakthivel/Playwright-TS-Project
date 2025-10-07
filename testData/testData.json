@@ -1,0 +1,26 @@
+{
+    "registerationDetails": {
+        "fName": "",
+        "lName": "",
+        "address": "1, Queen street",
+        "city": "Melbourne",
+        "state": "Vic",
+        "zip": "1000",
+        "phone": "123456789",
+        "ssn": "12345",
+        "username": "5",
+        "password": "",
+        "confirmPwd": ""
+    },
+    "validLoginCredentials": {
+        "username": "haripriya",
+        "password": "login@123"
+    },
+    "invalidLoginCredentials": {
+        "username": "abc456",
+        "password": "xyz@123"
+    },
+    "transferDetails": {
+        "amount": "100"
+    }
+}
