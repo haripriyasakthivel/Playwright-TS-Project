@@ -39,7 +39,7 @@ stages {
     }
     stage('Run Tests'){
         steps{
-            sh 'npm run html-report'
+            sh 'npm run test'
         }
     }
 }

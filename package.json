@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "npx playwright test --reporter=html",
     "test:smoke": "npx playwright test --grep @smoke --project=e2e-chromium",
     "test:serial": "npx playwright test --workers=1 --project=api-chromium",
     "test:e2e": "npx playwright test tests/e2e/validateParabankFunctions.spec.ts",
