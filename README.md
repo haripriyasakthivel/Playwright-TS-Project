@@ -24,7 +24,7 @@ Test automation framework for end-to-end and API tests that are automated using 
 ```
 ### Installations
 
-- [Node.js](https://nodejs.org/en/download/) (v14 or higher)
+- [Node.js](https://nodejs.org/en/download/)
 - [npm](https://www.npmjs.com/get-npm)
 
 1. **Clone the repository:**
@@ -95,7 +95,7 @@ eg: npm run test:smoke
 ```
 ### CI Integration
 
-This Playwright project can be run in Jenkins by configuring the Job to take the script in Jenkinsfile from the Github repo. Also, to send email notification after every build, set up global email notification configurations in Jenkins.
+This Playwright project can be executed in Jenkins by configuring the job to use the Jenkinsfile from the GitHub repository. To send email notifications after each build (successful or failed), configure the global email notification settings in Jenkins.
 
 **Pipeline steps**
 1. Checkout latest changes from Git
@@ -105,3 +105,19 @@ This Playwright project can be run in Jenkins by configuring the Job to take the
 5. Runs all the test
 6. Publish HTML report
 7. Sends Email notification to the mentioned user email with Build Status, Build Number and Build URL
+
+**Test Report -** 
+
+<img width="1010" height="941" alt="Screenshot 2025-10-09 at 5 29 53 pm" src="https://github.com/user-attachments/assets/5dc6221f-5682-4af1-bb83-816f3951d46a" />
+
+
+**Jenkins Build -**
+
+<img width="977" height="794" alt="Screenshot 2025-10-09 at 5 20 35 pm" src="https://github.com/user-attachments/assets/90fdc59c-b3c7-430c-a5f5-6e5db66f9f9b" />
+
+
+**Email Notification -** 
+
+<img width="690" height="339" alt="Screenshot 2025-10-09 at 5 22 18 pm" src="https://github.com/user-attachments/assets/3f1d932a-f813-4c35-8b70-139f23ed90c8" />
+
+
